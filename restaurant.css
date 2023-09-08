@@ -1,0 +1,153 @@
+body{
+  border: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #FFB31F;
+}
+
+.container-1{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr) 1.85fr;
+  grid-template-rows:70px 100px 100px 100px 100px 100px 100px 100px ;
+}
+
+@media (min-width:250px) and (max-width:480px) {
+  .container-1{
+    grid-template-columns: repeat(1,1fr);
+    grid-template-rows: 70px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px ;
+  }
+}
+
+.container-2{
+  grid-area: 1/1/2/7;
+}
+
+.placeholder-image{
+  background:url('red.jpg');
+  background-size:cover;
+  background-repeat: no-repeat;
+  grid-area: 2/5/9/7;
+}
+
+@media (min-width:250px) and (max-width:480px) {
+  .placeholder-image{
+    grid-area:2/1/8/8 ;
+  }
+}
+
+
+.page-intro{
+  grid-area:2/1/9/4 ;
+}
+
+@media (min-width:250px) and (max-width:480px) {
+  .page-intro{
+    grid-area:7/1/15/8;
+  }
+}
+
+
+.container-2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+}
+
+.nav-menu{
+margin-right: 20px;
+width: 250px;
+display: flex;
+flex-direction: row;
+justify-content: space-evenly;
+font-family: 'Inter', sans-serif;
+}
+
+.nav-logo{
+  margin-left: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.page-intro{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+}
+
+.intro-1{
+  font-size: 60px;
+  width: 300px;
+  height: 300px;
+  font-family: 'Roboto';
+}
+
+.intro-2{
+  font-size: 18px;
+  width: 500px;
+  height: 100px;
+  font-family: 'Roboto';
+  align-content: center;
+  margin-top: 20px;
+  position: relative;
+  left: 15px;
+}
+
+.button{
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+  background-color: black;
+  color: white;
+  font-size: 16px;
+  margin-right:300px;
+  position: relative;
+  bottom: 30px;
+  font-family: 'Roboto';
+  text-decoration: none;
+}
+
+.menu-1{
+  text-decoration: none;
+  color: black;
+  font-size: 18px;
+}
+
+.menu-2{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  .menu-3{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+  }
+
+  .cute-text{
+    grid-area: 2/4/5/5;
+    background:url('hj.jpg');
+  background-size:contain;
+  background-position-x: 30px;
+  }
+
+  .cutie-text{
+    grid-area: 5/4/9/5;
+    background:url('tr.jpg');
+  background-size:contain;
+  background-position-x: 30px;
+  }
+
+  .cutiie-text{
+    grid-area: 3/2/7/3;
+    border: 10px solid red;
+    width: 300px;
+    height: 300px;
+    position: relative;
+    bottom:60px;
+    right: 35px;
+  }
